@@ -58,7 +58,7 @@ module.exports = function (app) {
       }
       // Create new document
       const newIssue = new NewIssue({
-        name: project,
+        name: 'test',
         issue_title: title,
         issue_text: text,
         created_on: new Date(),
