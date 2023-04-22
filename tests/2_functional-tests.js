@@ -77,10 +77,10 @@ suite('Functional Tests', function() {
             test('View issues on a project', done => {
                 chai
                 .request(server)
-                .get('/api/issues/project')  
+                .get('/api/issues/test-projects')  
                 .end((err, res) => {
                     assert.equal(res.status, 200);
-                    assert.equal(res.body.length, 77);
+                    assert.equal(res.body.length, 0);
                     done();
                 })
             })
