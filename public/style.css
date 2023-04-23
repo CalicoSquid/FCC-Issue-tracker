@@ -10,17 +10,19 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: rgb(255,255,255);
-background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(140,140,140,1) 100%, rgba(0,0,0,1) 100%);
+  background: rgb(255,122,0);
+background: radial-gradient(circle, rgba(255,122,0,1) 0%, rgba(110,103,89,1) 10%, rgba(0,0,0,1) 100%);
 }
 
 .container {
   padding: 10px;
   background-color: white;
-  box-shadow: 0 0 10px black;
+  box-shadow: 0 0 10px #ff7a00;
+  min-width: 600px;
+  border-radius: 5px;
 }
 
-h1 {
+h1, h3 {
   text-align: center;
 }
 
@@ -43,14 +45,15 @@ h1 {
 #testui {
   display: flex;
   justify-content: space-around;
-  width: 100%;
+  width: 80%;
+  margin:auto;
 }
 
 .form-container {
   border: 1px solid gray;
   background-color: #f0f0f0;
-  height: 210px;
   padding: 5px;
+  width: 25%;
   border-radius: 5px;
 }
 .headers {
@@ -58,15 +61,36 @@ h1 {
   margin: 20px 0 20px 0;
 }
 
-.closed {
-  background-color: lightgrey;
-}
-
-.id {
-  font-size: 10.5px;
-}
-
 .bottom {
   max-width: 600px;
   margin-top: 35px;
+}
+
+.border {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+a, i {
+  text-decoration: none;
+  color:#ff7a00
+}
+
+input, textarea {
+  width: 90%;
+}
+
+button {
+  background: rgb(255,122,0);
+  padding: 5px;
+  border-radius: 5px;
+  margin: 12px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: orangered;
 }
