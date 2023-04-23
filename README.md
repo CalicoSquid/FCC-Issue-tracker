@@ -1,7 +1,9 @@
 # Issue Tracker
 
 This is the boilerplate for the Issue Tracker project. Instructions for building your project can be found at https://www.freecodecamp.org/learn/quality-assurance/quality-assurance-projects/issue-tracker
+
 TESTS:
+
 You can provide your own project, not the example URL.
 
 Passed:You can send a POST request to /api/issues/{projectname} with form data containing the required fields issue_title, issue_text, created_by, and optionally assigned_to and status_text.
